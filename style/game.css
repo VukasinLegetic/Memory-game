@@ -1,0 +1,163 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+}
+header  {
+    width: 100vw;
+    height: 15vh;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+}
+#name_game {
+    border-radius: 35%;
+    background-color: crimson;
+    width: 10vw;
+    text-align: center;
+    padding-top: 1%;
+
+}
+.h {
+    color: black;
+    
+
+}
+main {
+    background-image: url(/img/background.jpg);
+    height: 75vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+}
+footer {
+    background-color: black;
+    width: 100vw;
+    height: 10vh;
+}
+main a {
+    text-decoration: none;
+    color: yellow;
+    font-size: 2rem;
+    margin: 2%;
+    
+    
+}
+main a:hover{
+    color: white;
+}
+#log_cont {
+    position: absolute;
+    left: 90%;
+}
+#but {
+    color: white;
+}
+
+@media only screen and (max-width: 600px) {
+    
+    .h {
+        font-size: 1rem ;
+        
+    }
+    #name_game {
+        width: 21vw;
+        height: 10vh;
+        display: flex;
+        align-items: center;
+        
+ 
+        
+       
+        
+    }
+   #but{
+       background-color: crimson;
+       width: 15vw;
+       height: 10vh;
+       margin-left: 60%;
+       font-size: 0.8rem;
+       
+       
+   }
+   main{
+       background-size: cover;
+       
+   }
+   #log_cont{
+       position: relative;
+       left:8%;
+       width: 30%;
+   }
+   main a {
+       font-size: 1rem;
+   }
+   
+
+}
+
+/* Small devices  */
+@media only screen and (min-width: 600px) {
+    .h {
+        font-size: 1.5rem;
+    }
+    #name_game {
+        width: 21vw;
+        height: 10vh;
+        display: flex;
+        align-items: center;
+        
+ 
+        
+       
+        
+    }
+    #log_cont{
+        position: relative;
+        left:70%;
+        bottom: 17%;
+        width: 25%;
+    }
+
+}
+
+/* Medium devices */
+@media only screen and (min-width: 768px) {
+    #log_cont{
+        position: relative;
+        left:70%;
+        bottom: 20%;
+        width: 25%;
+
+}
+}
+
+
+/* Large devices */
+@media only screen and (min-width: 992px){
+    #log_cont{
+        position: relative;
+        left:75%;
+        bottom: 25%;
+        width: 25%;
+
+}
+.h {
+    padding-left: 50px;
+}
+} 
+
+/* Extra large devices  */
+@media only screen and (min-width: 1200px){
+    #log_cont{
+        position: relative;
+        left:75%;
+        bottom: 27%;
+        width: 25%;
+
+}
+.h {
+    padding-left: 100px;
+}
+}
