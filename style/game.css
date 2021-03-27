@@ -1,17 +1,18 @@
-*{
+ *{
     box-sizing: border-box;
     margin: 0px;
 }
 header  {
     width: 100vw;
     height: 15vh;
-    background-color: black;
+    background: rgb(59,55,134);
+background: radial-gradient(circle, rgba(59,55,134,1) 24%, rgba(250,248,255,1) 100%, rgba(0,212,255,1) 100%);
     display: flex;
     justify-content: space-between;
 }
 #name_game {
-    border-radius: 35%;
-    background-color: crimson;
+    
+    
     width: 10vw;
     text-align: center;
     padding-top: 1%;
@@ -19,11 +20,39 @@ header  {
 }
 .h {
     color: black;
-    
+    font-family: 'Gloria Hallelujah', cursive;
 
 }
+#sign_up, #log_in, #loog_in, #log_out{
+    padding: 5px;
+    font-weight: 800;
+
+
+}
+#sign_up:hover{
+    color: red;
+   
+}
+#log_in:hover{
+    color: red;
+}
+#loog_in:hover{
+    color: red;
+}
+#log_out:hover{
+    color: red;
+}
+#login {
+    background-color: wheat;
+    border: solid 5px black;
+}
+#regis{
+    background-color: wheat;
+    border: solid 5px black;
+}
+
 main {
-    background-image: url(/img/background.jpg);
+    background-image: url(../img/background.jpg);
     height: 75vh;
     background-repeat: no-repeat;
     background-size: cover;
@@ -31,16 +60,21 @@ main {
     position: relative;
     flex-direction: column;
 }
+
+
 footer {
     background-color: black;
     width: 100vw;
     height: 10vh;
+    display: flex;
+    justify-content: space-between;
 }
 main a {
     text-decoration: none;
     color: yellow;
     font-size: 2rem;
     margin: 2%;
+    width: 15%;
     
     
 }
@@ -52,9 +86,46 @@ main a:hover{
     left: 90%;
 }
 #but {
-    color: white;
+    color: black;
+}
+.hid {
+    display: none;
 }
 
+#fb{
+    color:gray;
+    font-size: 2rem;
+}
+#go{
+    color: gray;
+    font-size: 2rem;
+}
+#ig{
+    color: gray;
+    font-size: 2rem;
+}
+
+.soc{
+    padding: 10px;
+    margin-top: 1%;
+}
+.so{
+    margin: 0.5rem;
+}
+.cont{
+    margin: 30px;
+    padding: 5px;
+}
+
+#yt {font-size: 1rem;
+color: black;
+}
+.koc{
+    background-color: wheat;
+    border-radius: 10%;
+    border: solid 2px black;
+    width: 20%;
+}
 @media only screen and (max-width: 600px) {
     
     .h {
@@ -62,6 +133,8 @@ main a:hover{
         
     }
     #name_game {
+        background-color: red;
+    border-radius: 30%;
         width: 21vw;
         height: 10vh;
         display: flex;
@@ -74,6 +147,7 @@ main a:hover{
     }
    #but{
        background-color: crimson;
+       border-radius: 10%;
        width: 15vw;
        height: 10vh;
        margin-left: 60%;
@@ -88,12 +162,25 @@ main a:hover{
    #log_cont{
        position: relative;
        left:8%;
-       width: 30%;
+       width: 50%;
+       overflow: hidden;
    }
    main a {
        font-size: 1rem;
    }
+   #sign_up:hover{
+    color: white;
    
+}
+#log_in:hover{
+    color: white;
+}
+#loog_in:hover{
+    color: white;
+}
+#log_out:hover{
+    color: white;
+}
 
 }
 
@@ -103,6 +190,7 @@ main a:hover{
         font-size: 1.5rem;
     }
     #name_game {
+        
         width: 21vw;
         height: 10vh;
         display: flex;
@@ -118,6 +206,7 @@ main a:hover{
         left:70%;
         bottom: 17%;
         width: 25%;
+        overflow: hidden;
     }
 
 }
@@ -136,6 +225,9 @@ main a:hover{
 
 /* Large devices */
 @media only screen and (min-width: 992px){
+    .h {
+        margin-right: 100px;
+    }
     #log_cont{
         position: relative;
         left:75%;
@@ -152,12 +244,13 @@ main a:hover{
 @media only screen and (min-width: 1200px){
     #log_cont{
         position: relative;
-        left:75%;
+        left:89%;
         bottom: 27%;
-        width: 25%;
+        width: 10%;
 
 }
 .h {
     padding-left: 100px;
 }
+
 }

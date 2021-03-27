@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="js/main.js"></script>
+    <link rel="stylesheet" href="../projekat/style/css/all.min.css">
     <link rel="stylesheet" href="style/game.css">
 </head>
 <body>
@@ -22,8 +22,12 @@
     </header>
     <!--Main-->
     <main>
-        <a href="">Start playing</a>
-        <a href="">How to play</a>
+        <a href="memory.html">Start playing</a>
+        <a onclick="video()">How to play</a>
+
+        <div id="yt"><iframe width="200" height="200" src="https://www.youtube.com/embed/t7vHj4pmNZY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+       <div class="koc"><br> As shown in the following video this game is played similarly. <br> You have to click on the cards and find the right pair. Good luck!</div></div>
+        
     
     <!--Login and sign up-->
     <div id="log_cont">
@@ -69,18 +73,24 @@
     </main>
  <!--Footer-->
     <footer>
-        <div>
-            <a href="">
+        <div class="soc">
+            <a  class="social" href="">
+                <i id="fb" class="fab fa-facebook-square"></i>
 
             </a>
-            <a href=""></a>
-            <a href=""></a>
+            <a  class="social" href="">
+                <i id="go" class="fab fa-google-plus-square"></i>
+            </a>
+            <a class="social"  href="">
+                <i id="ig" class="fab fa-instagram"></i>
+            </a>
 
         </div>
         <div>
-            <button>Contact us</button>
+            <button class="cont">Contact us</button>
         </div>
 
     </footer>
+    <script src="../projekat/js/main.js"></script>
 </body>
 </html>
