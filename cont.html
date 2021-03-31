@@ -13,36 +13,38 @@
         <div id="empty"></div>
         <div id="name_game"><h1 class="h">MEMORY GAME</h1></div>
       
-        </div>
+        
 
     </header>
     <!--Main-->
     <main>
-        <button class="back"><a href="game.html">&#9754;Go back</a></button>
+       
         <div class="body">
 
             <div id="form">
+                <a class="back" href="game.html">&#9754;Go back</a>
             <h3 class="h3">Contact us</h3>
         
-            <form id="form-id" class="form-class" method="post" action="contact-form-process.php">
+            <form id="form-id" class="form-class" method="post" >   
                 
                 <div class="form-group">
                     <label for="Name" class="label">Your name</label>
-                    <div class="input-group">
-                        <input type="text" id="Name" name="Name" class="form-control" required>
+                    <div class="input-group">     
+                        <input type="text" id="Name" name="Name" placeholder="John Sandler" class="form-control" required>
                     </div>
                 </div>
         
                 <div class="form-group">
                     <label for="Email" class="label">Your email address</label>
                     <div class="input-group">
-                        <input type="email" id="Email" name="Email" class="form-control" required>
+                        <input type="email" id="Email" name="Email" placeholder="johnsandler@gmail.com" class="form-control" required>
                     </div>
                 </div>
         
                 <div class="form-group">
                     <label for="Message" class="label">Your message</label>
                     <div class="input-group">
+                        
                         <textarea id="Message" name="Message" class="form-control" rows="6" maxlength="3000" required></textarea>
                     </div>
                 </div>
@@ -83,5 +85,6 @@
 
     </footer>
     <script src="../projekat/js/api.js"></script>
+    <script src="../projekat/js/formexp.js"></script>
 </body>
 </html>

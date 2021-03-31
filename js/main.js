@@ -48,6 +48,7 @@ if (ff.getAttribute("class") == "hid"){
 } else if (ff.getAttribute("class") == "registration"){
     ff.setAttribute("class", "hid")
 }
+document.getElementById("yt").style.display="none"
 //Provera pojedinacnih polja
 ff.onsubmit = function(){
   var error = document.getElementById('error1');
@@ -151,6 +152,8 @@ login.addEventListener("click", function () {
       ul.setAttribute("class", "log");
     }
 
+    document.getElementById("yt").style.display="none"
+
     ul.onsubmit = function () {
       var error = document.getElementById("error");
       var usrname = document.getElementById("id_log").value.trim();
@@ -194,3 +197,5 @@ login.addEventListener("click", function () {
     var f = JSON.parse(fetch);
     return f;
 }
+
+
