@@ -116,6 +116,7 @@ ff.onsubmit = function(){
 }
 
 
+
  user.name= name;
  user.email= email;
  user.username=username;
@@ -133,7 +134,13 @@ localStorage.setItem("UsersPNSHR", line);
 
 };
 
-
+ff.onreset=function(){
+  var msg=window.confirm("Confirm");
+  if (msg==false){
+      return false;
+  }
+  window.location.reload();
+}
 });
 
 //Logovanje
@@ -173,11 +180,10 @@ login.addEventListener("click", function () {
               return false;
             }
           }
-        } else {
-          error.textContent = "Incorrect username";
-          return false;
-        }
+        } 
       }
+      error.textContent = "Incorrect username";
+        return false;
     };
 
     ul.onreset=function(){

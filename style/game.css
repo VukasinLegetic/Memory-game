@@ -129,6 +129,7 @@ main a:hover{
 #yt {font-size: 1rem;
 color: black;
 display: none;
+border: 0px;
 }
 .koc{
     background-color: wheat;
