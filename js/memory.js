@@ -153,14 +153,14 @@ function moveCounter(){
         startTimer();
     }
     // Ocena zvezdica na osnovu poteza
-    if (moves > 8 && moves < 12){
+    if (moves > 16 && moves < 24){
         for( i= 0; i < 3; i++){
             if(i > 1){
                 stars[i].style.visibility = "collapse";
             }
         }
     }
-    else if (moves > 13){
+    else if (moves > 25){
         for( i= 0; i < 3; i++){
             if(i > 0){
                 stars[i].style.visibility = "collapse";
